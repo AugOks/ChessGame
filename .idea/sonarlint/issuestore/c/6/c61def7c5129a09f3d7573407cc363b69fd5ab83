@@ -1,0 +1,23 @@
+
+œ	java:S120"ZRename this package name to match the regular expression '^[a-z_]+(\.[a-z_][a-z0-9_]*)*$'.(â„‰™8ƒÅéæø1J$56284174-751b-4234-81f0-27d0b54cd640
+o
+java:S1197",Move the array designators [][] to the type.(ì‚Š£8“Åéæø1J$1cded134-76b7-43bf-ac24-2eeef98a390d
+m	java:S106"+Replace this use of System.out by a logger.(„Š²Ú8”Åéæø1J$4baeded9-2b8a-4fc2-8bd9-d3b3fef70939
+m	java:S106"+Replace this use of System.out by a logger.(¢ãÓ8˜Åéæø1J$59b6308d-1316-45f7-9c29-c23fefbd699a
+“
+java:S1301#"KReplace this "switch" statement by "if" statements to increase readability.(¸ìù«üÿÿÿÿ8—Åéæø1J$aa9232c2-7c9b-4e15-a4ff-b74d53af3898
+r	java:S106%"+Replace this use of System.out by a logger.(æÖÖ„ıÿÿÿÿ8˜Åéæø1J$11c57636-0f3a-413d-a676-e1212ffc540d
+m	java:S106&"+Replace this use of System.out by a logger.(†ğÇ©8˜Åéæø1J$6d2e745c-8f30-4bbb-b865-f9e947036fdd
+r	java:S106("+Replace this use of System.out by a logger.(ÀõÊòüÿÿÿÿ8™Åéæø1J$072f9151-4bb1-4bb1-8220-4293f94f825e
+r	java:S106*"+Replace this use of System.out by a logger.(¿ÿšÖıÿÿÿÿ8¶áéæø1J$74fba458-397c-4360-b91e-f6a9057535ce
+m	java:S106+"+Replace this use of System.out by a logger.(†ğÇ©8»´êæø1J$ac50051d-088f-4b3c-af86-a301a2c1cf14
+r	java:S106-"+Replace this use of System.out by a logger.(ÀõÊòüÿÿÿÿ8…çëæø1J$f1080402-9fca-4cde-8a5d-35c9c49b4d74
+r	java:S1060"+Replace this use of System.out by a logger.(ñ¬ÑÈøÿÿÿÿ8¯‡îæø1J$b50c684b-e553-4400-a76a-bd8d89f5766d
+r	java:S1062"+Replace this use of System.out by a logger.(™Ç“áüÿÿÿÿ8ªˆğæø1J$64312447-e721-42e6-9fac-2cfedb1bc409
+r	java:S106B"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8¦Øğæø1J$16882ded-817a-4ce4-b03c-ef0e48f6da80
+r	java:S106K"+Replace this use of System.out by a logger.(Æôı®úÿÿÿÿ8Ëãñæø1J$b6a5331c-b996-4307-9cc3-30b9bad0242f
+r	java:S106N"+Replace this use of System.out by a logger.(ªÓ¼áşÿÿÿÿ8»òæø1J$c7cf7267-fb45-4e48-809c-443ab8bae873
+t
+java:S1128",Remove this unused import 'java.awt.Canvas'.(¾··îıÿÿÿÿ8šÅéæø1J$637124dd-6da1-4074-87cc-fd275f8ce676
+w
+java:S1128"4Remove this unused import 'java.awt.event.KeyEvent'.(¬ğİÍ8šÅéæø1J$44baa626-a5f2-48a3-a0aa-4eaa8db8bd84
