@@ -18,6 +18,7 @@ public class ChessBoard {
   /**
    * The board is represented as a 2D array of pieces.
    */
+  private BoardObserver observer;
   private final Piece[][] board = new Piece[8][8];
 
   /**
@@ -28,8 +29,8 @@ public class ChessBoard {
   /**
    * The constructor initializes the board with the pieces in their starting positions.
    */
-  public ChessBoard() {
-
+  public ChessBoard(BoardObserver observer) {
+    this.observer = observer;
     for (int i = 0; i < board.length; i++) {
       board[1][i] = new Pawn(true);
       board[6][i] = new Pawn(false);
@@ -40,6 +41,10 @@ public class ChessBoard {
       createRowOfPieces(true);
       createRowOfPieces(false);
     }
+  }
+
+  private  void updateObserver() {
+    observer.update();
   }
 
   /**
@@ -98,6 +103,7 @@ public class ChessBoard {
     if (pieceMoved && board[newX][newY] != null) {
       removedPieces.add(board[newX][newY]);
     }
+    updateObserver();
     return pieceMoved;
   }
 

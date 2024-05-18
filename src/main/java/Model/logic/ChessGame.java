@@ -1,7 +1,6 @@
 package Model.logic;
 
-import java.awt.Canvas;
-import java.awt.event.KeyEvent;
+
 import java.util.Scanner;
 
 public class ChessGame {
@@ -14,8 +13,7 @@ public class ChessGame {
   /**
    * Constructor for the ChessGame class
    */
-    public ChessGame() {
-        board = new ChessBoard();
+    public ChessGame() {;
     }
 
   /**

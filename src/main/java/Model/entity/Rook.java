@@ -5,8 +5,19 @@ package Model.entity;
  */
 public class Rook extends Piece {
 
+  private final String image;
   public Rook(boolean white) {
     super(white);
+    if (white) {
+      image = "whtRook";
+    } else {
+      image = "blkRook";
+    }
+  }
+
+  @Override
+  public String imageLink() {
+    return image;
   }
 
   /**

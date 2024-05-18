@@ -1,8 +1,8 @@
 import Model.logic.ChessGame;
+import view.ChessgameMain;
 
 public class Main {
   public static void main(String[] args) {
-    ChessGame game = new ChessGame();
-    game.playGame();
+    ChessgameMain.mainApp(args);
   }
 }

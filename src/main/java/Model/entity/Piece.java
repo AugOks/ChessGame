@@ -13,6 +13,7 @@ public abstract class Piece {
       color = "\u001B[31m";
     }
   }
+  public abstract String imageLink();
 
   public abstract boolean allowedMove( int x, int y);
   public boolean isWhite() {

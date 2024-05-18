@@ -4,8 +4,19 @@ package Model.entity;
  * Knight class that extends Piece class.
  */
 public class Knight extends Piece {
+  private final String image;
   public Knight(boolean white) {
     super(white);
+    if (white){
+      image = "whtKnight";
+    }else{
+      image = "blkKnight";
+    }
+  }
+
+  @Override
+  public String imageLink() {
+    return image;
   }
 
   @Override

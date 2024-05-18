@@ -4,12 +4,22 @@ package Model.entity;
  * This class represents the Pawn piece
  */
 public class Pawn extends Piece { // This class is a subclass of Piece
-
+private  final String image;
   private boolean firstMove;
 
   public  Pawn(boolean white) {
     super(white);
     firstMove = true;
+    if (white){
+      image = "whtPawn";
+    }else{
+      image = "blkPawn";
+    }
+  }
+
+  @Override
+  public String imageLink() {
+    return image;
   }
 
   @Override

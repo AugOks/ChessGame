@@ -5,9 +5,20 @@ package Model.entity;
  */
 public class Queen extends Piece {
 
+  private final String image;
 
   public Queen(boolean white) {
     super(white);
+    if (white) {
+      image = "whtQueen";
+    } else {
+      image = "blkQueen";
+    }
+  }
+
+  @Override
+  public String imageLink() {
+    return image;
   }
 
   @Override
