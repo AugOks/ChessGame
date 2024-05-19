@@ -1,4 +1,4 @@
-import Model.logic.ChessGame;
+
 import view.ChessgameMain;
 
 public class Main {

@@ -70,9 +70,7 @@ public class ChessGame {
             canvas[i][j] = 'X';
             color = "\u001B[37m";
           }
-          System.out.print( color  +  canvas[i][j] + "\u001B[0m");
         }
       }
-      System.out.println();
     }
 }

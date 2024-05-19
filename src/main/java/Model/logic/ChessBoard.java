@@ -132,26 +132,36 @@ public class ChessBoard {
       if (piece instanceof Knight) {
         canMove = true;
       } else {
-        for (int i = 1; i <= delta_x ; i++){
-          int step = (int) (x+i*xDirection);
-          if (board[step][y] == null || board[step][y].isWhite() != piece.isWhite()) {
-            canMove = true;
-          } else {
-            canMove = false;
+        if (delta_x != 0 && delta_y == 0) {
+          for (int i = 1; i <= delta_x; i++) {
+            int step = (int) (x + i * xDirection);
+           canMove = this.collisionDetector(step, y, piece);
           }
-        }
-        for (int i = 1; i <= delta_y ; i++){
-          int step = (int) (y+i*yDirection);
-          if (board[x][step] == null || board[x][step].isWhite() != piece.isWhite()) {
-            canMove = true;
-          } else {
-            canMove = false;
+        } else if (delta_y != 0 && delta_x == 0) {
+          for (int i = 1; i <= delta_y; i++) {
+            int step = (int) (y + i * yDirection);
+            canMove = this.collisionDetector(x, step, piece);
+          }
+        }else if (delta_x != 0 && delta_y != 0) {
+          for (int i = 1; i <= delta_x; i++) {
+            int stepX = (int) (x + i * xDirection);
+            int stepY = (int) (y + i * yDirection);
+            canMove = this.collisionDetector(stepX, stepY, piece);
           }
         }
       }
-
+      if (piece instanceof Pawn && piece.isWhite() &&  xDirection == -1 ||
+          piece instanceof Pawn && !piece.isWhite() && xDirection == 1) {
+        canMove = false;
+      }
     }
     return  canMove;
+  }
+  private boolean collisionDetector(int stepX, int stepY, Piece piece ){
+    if (board[stepX][stepY] == null || board[stepX][stepY].isWhite() != piece.isWhite()) {
+      return  true;
+    }
+    return false;
   }
 
 }

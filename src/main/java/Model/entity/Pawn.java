@@ -26,14 +26,15 @@ private  final String image;
   public boolean allowedMove(int x, int y) {
     boolean move = false;
     if (firstMove){
-      if (x == 0 && y < 3 || x < 3 && y == 0) {
+      if (y == 0 && x < 3 ) {
         move = true;
       }
     } else {
-      if (x == 0 && y < 2 || x < 2 && y == 0) {
+      if (y == 0 && x < 2 ) {
         move = true;
       }
     }
+    firstMove = false;
     return  move;
   }
 
